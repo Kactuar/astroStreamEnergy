@@ -2,7 +2,7 @@ const TelegramApi = require('node-telegram-bot-api')
 token = '7151135279:AAFIVcWVcfhSxHhMFZHAnJriVvN14WS99xo'
 
 const bot = new TelegramApi(token, {polling: true})
-const url = 'https://www.ya.ru'
+const url = 'https://astro-stream-energy.vercel.app/'
 
 bot.on('message', async msg =>{
     const chatId = msg.chat.id;
