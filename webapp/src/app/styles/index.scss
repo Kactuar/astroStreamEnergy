@@ -1,0 +1,13 @@
+@import "reset";
+@import "variables/global";
+@import "themes/normal";
+@import "themes/dark";
+
+.ContentPage {
+    display: flex;
+}
+
+.PageWrapper {
+    flex-grow: 1;
+    padding: 20px;
+}

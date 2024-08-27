@@ -17,6 +17,7 @@ bot.on('message', async msg =>{
     const btnMsgRu = 'Гороскоп на';
     const btnMsgEng = 'Horoscope for';
     const localButtonMsg = language === 'ru' ? btnMsgRu : btnMsgEng;
+    console.log('language', language)
 
     if (text === '/start') {
         return bot.sendMessage(chatId, `${localWelcomMsg} ${username}`, {

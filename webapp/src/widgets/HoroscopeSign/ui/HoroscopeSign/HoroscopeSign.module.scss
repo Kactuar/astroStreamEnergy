@@ -1,0 +1,32 @@
+.Sign {
+   width: 150px;
+   margin: 5px;
+   padding: 10px;
+   border: 1px solid var(--black-color);
+   border-radius: 3px;
+}
+
+.Link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   text-decoration: none;
+   color: var(--black-color);
+}
+
+.Icon {
+   width: 100%;
+   min-width: 40px;
+   min-height: 40px;
+   margin-bottom: 5px;
+}
+
+.Date {
+   text-align: center;
+}
+
+.ButtonSign {
+   border: none;
+   background: none;
+}
