@@ -1,14 +1,12 @@
 import React from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import { HoroscopeSign } from 'widgets/HoroscopeSign';
 import signAll from 'shared/mock/sign';
 import { observer } from 'mobx-react-lite';
-import cls from './MainPage.module.scss';
 import { useAppStore } from 'app/providers/StoreProvider/ui/StoreProvider';
+import cls from './MainPage.module.scss';
 
 const MainPage = observer(() => {
-    const { t } = useTranslation();
     const { signStore } = useAppStore();
     return (
         <div className={classNames(cls.signBlock, {})}>

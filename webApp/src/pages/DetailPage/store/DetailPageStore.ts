@@ -30,11 +30,11 @@ class DetailPageStore {
                 })
                 .catch(error => {
                     runInAction(() => {
-                        console.error("Failed to fetch horoscope:", error);
+                        console.error('Failed to fetch horoscope:', error);
                         this.loading = false;
                     });
                     return null;
-                })
+                }),
         );
     };
 }

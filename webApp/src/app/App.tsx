@@ -4,7 +4,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
-import { PageLoader } from 'shared/ui/PageLoader/PageLoader'
+import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
 import { StoreContext } from 'app/providers/StoreProvider/ui/StoreProvider';
 import RootStore from 'app/providers/StoreProvider/ui/store';
 import { useTelegram } from 'shared/hooks/useTelegram';
@@ -14,7 +14,7 @@ function App() {
     const { tg } = useTelegram();
 
     useEffect(() => {
-        tg.ready();
+        tg?.ready();
     }, []);
 
     return (
