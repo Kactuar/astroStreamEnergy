@@ -5,7 +5,7 @@ import i18n from 'i18next';
 import { useAppStore } from 'app/providers/StoreProvider/ui/StoreProvider';
 import { observer } from 'mobx-react-lite';
 import cls from './Navbar.module.scss';
-import {useEffect} from "react";
+import { useEffect } from 'react';
 
 interface NavbarProps {
     className?: string;
