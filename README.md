@@ -9,6 +9,7 @@
 ### npm start 
 
 в папке webApp лежит проект с mini app, но локально его запустить ( в плане что бы он работал с телеграмм )
-не получилось поэтому вынес на vercel https://astro-stream-energy.vercel.app/
+не получилось поэтому вынес на vercel https://astro-stream-energy.vercel.app/ (урл чисто для справки)
+в целом бот и приложения полностью работают в телеграмме (если локально запустить слушатель бота в папке bot)
 
 имя бота в телеграмме https://t.me/butenkostreamenergybot
