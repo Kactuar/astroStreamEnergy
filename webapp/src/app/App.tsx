@@ -5,7 +5,7 @@ import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
-import { StoreContext, useAppStore } from 'app/providers/StoreProvider/ui/StoreProvider';
+import { StoreContext } from 'app/providers/StoreProvider/ui/StoreProvider';
 import RootStore from 'app/providers/StoreProvider/ui/store';
 import { useTelegram } from 'shared/hooks/useTelegram';
 import i18n from 'i18next';
@@ -14,12 +14,10 @@ import '../shared/config/i18n/i18n';
 function App() {
     const { theme } = useTheme();
     const { tg, user } = useTelegram();
-    const { signStore } = useAppStore();
 
     useEffect(() => {
         tg?.ready();
         i18n.changeLanguage(user?.language_code === 'ru' ? 'ru' : 'en');
-        signStore.setLanguage(user?.language_code);
     }, []);
 
     return (

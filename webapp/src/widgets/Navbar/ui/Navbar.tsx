@@ -5,6 +5,7 @@ import i18n from 'i18next';
 import { useAppStore } from 'app/providers/StoreProvider/ui/StoreProvider';
 import { observer } from 'mobx-react-lite';
 import cls from './Navbar.module.scss';
+import {useEffect} from "react";
 
 interface NavbarProps {
     className?: string;
@@ -15,6 +16,10 @@ export const Navbar = observer(
         const { user, onClose } = useTelegram();
         const { signStore, horoscopeStore } = useAppStore();
         const { t } = useTranslation();
+
+        useEffect(() => {
+            signStore.setLanguage(user?.language_code);
+        }, []);
 
         const onChangeLanguage = () => {
             const language = signStore.language === 'ru' ? 'en' : 'ru';
